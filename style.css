@@ -19,19 +19,24 @@ body {
 
 header {
     padding: 1.8rem 2.3rem;
+    max-width: 500px;
+    margin: auto;
 }
 
 .logo {
-    width: 8rem;
+    width: 25vmax;
 }
 
 main {
     padding: 1.8rem 2.2rem;
+    margin: auto;
+    max-width: 500px;
 }
 
 .img-container {
     margin-bottom: 4rem;
     max-height: 60%;
+    max-width: 400px;
 }
 
 .mockups {
@@ -42,7 +47,7 @@ main {
 .presentation {
     text-align: center;
     color: white;
-    max-width: 475px;
+    max-width: 550px;
 }
 
 h1 {
@@ -53,7 +58,7 @@ h1 {
 p {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 button {
@@ -62,7 +67,7 @@ button {
     border: none;
     color: var(--var-Violet);
     cursor: pointer;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.342);
+    box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.342);
     transition: 200ms ease-in-out;
 }
 
@@ -86,8 +91,8 @@ footer nav {
     text-decoration: none;
     border: .1rem solid white;
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,58 +113,62 @@ footer nav {
     font-size: 1rem;
 }
 
-@media (min-width:850px) {
+@media (min-width:1000px) {
     body {
         background-image: url('./images/bg-desktop.svg');
-        background-position: inherit;
-        background-size: contain;
     }
 
     header, main {
-        padding-left: 4.5rem;
+        padding-left: 5rem;
+        max-width: 1440px;
     }
     
     header{
-        padding-top: 2.5rem;
-        padding-bottom: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 8vh;
     }
     
     .logo {
-        width: 10rem;
+        width: 16vmax;
     }
     
     main {
         display: flex;
-        justify-content: space-between;
         padding-top: 1.2rem;
-        padding-right: 4.5rem;
         padding-bottom: 1.5rem;
     }
 
     .img-container {
         margin-bottom: 0;
         margin-right: 3rem;
-        max-width: 55%;
+        min-width: 50%;
+        max-width: 60%;
     }
 
     .presentation {
         text-align: left;
-        padding: .5rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+        padding: .5rem;
+    }
+
+    p{
+        font-size: 1.2rem;
     }
 
     button {
-        padding: 1rem 4rem;
+        padding: 1.2rem 4rem;
     }
 
     footer {
         padding: 0;
         padding-bottom: 1rem;
         padding-right: 5rem;
+        max-width: 1440px;
+        margin: auto;
     }
 
     footer nav {
