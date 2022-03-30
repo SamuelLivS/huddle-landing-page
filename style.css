@@ -31,7 +31,6 @@ main {
 
 .img-container {
     margin-bottom: 4rem;
-    max-width: 55%;
     max-height: 60%;
 }
 
@@ -111,7 +110,7 @@ footer nav {
 
 @media (min-width:850px) {
     body {
-        background-image: url('/images/bg-desktop.svg');
+        background-image: url('./images/bg-desktop.svg');
         background-position: inherit;
         background-size: contain;
     }
@@ -140,6 +139,7 @@ footer nav {
     .img-container {
         margin-bottom: 0;
         margin-right: 3rem;
+        max-width: 55%;
     }
 
     .presentation {
