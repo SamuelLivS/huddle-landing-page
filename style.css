@@ -1,0 +1,168 @@
+:root {
+    --var-Violet: hsl(257, 40%, 49%);
+    --var-Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--var-Violet);
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+header {
+    padding: 1.8rem 2.3rem;
+}
+
+.logo {
+    width: 8rem;
+}
+
+main {
+    padding: 1.8rem 2.2rem;
+}
+
+.img-container {
+    margin-bottom: 4rem;
+    max-width: 55%;
+    max-height: 60%;
+}
+
+.mockups {
+    max-width: 100%;
+    height: 100%;
+}
+
+.presentation {
+    text-align: center;
+    color: white;
+    max-width: 475px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: .8rem 5rem;
+    border-radius: 2rem;
+    border: none;
+    color: var(--var-Violet);
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.342);
+    transition: 200ms ease-in-out;
+}
+
+button:hover {
+    background: var(--var-Soft-Magenta);
+    color: white;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    color: white;
+    text-decoration: none;
+    border: .1rem solid white;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    transition: 200ms ease-in-out;
+}
+
+.social-links:hover {
+    color: var(--var-Soft-Magenta);
+    border-color: var(--var-Soft-Magenta);
+}
+
+.social-links:last-child {
+    margin: 0;
+}
+
+.fa-brands {
+    font-size: 1rem;
+}
+
+@media (min-width:850px) {
+    body {
+        background-image: url('/images/bg-desktop.svg');
+        background-position: inherit;
+        background-size: contain;
+    }
+
+    header, main {
+        padding-left: 4.5rem;
+    }
+    
+    header{
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+    }
+    
+    .logo {
+        width: 10rem;
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.2rem;
+        padding-right: 4.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .img-container {
+        margin-bottom: 0;
+        margin-right: 3rem;
+    }
+
+    .presentation {
+        text-align: left;
+        padding: .5rem;
+        padding-top: 2rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    button {
+        padding: 1rem 4rem;
+    }
+
+    footer {
+        padding: 0;
+        padding-bottom: 1rem;
+        padding-right: 5rem;
+    }
+
+    footer nav {
+        justify-content: flex-end;
+    }
+}
